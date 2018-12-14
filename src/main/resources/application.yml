@@ -1,0 +1,11 @@
+#图片前缀
+IMAGE_SERVER: http://39.106.211.119/
+
+
+spring:
+  rabbitmq:
+    host: 94.191.79.185
+    port: 5672
+    username: guest
+    password: guest
+
