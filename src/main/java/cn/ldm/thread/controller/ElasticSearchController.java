@@ -6,7 +6,6 @@ import io.searchbox.client.JestClient;
 import io.searchbox.core.Index;
 import io.searchbox.core.Search;
 import io.searchbox.core.SearchResult;
-import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
@@ -37,8 +36,8 @@ public class ElasticSearchController {
 
     @RequestMapping(value = "elasticsearch")
     public void elasticsearch(){
-        Book book6 = new Book (61,"中国移动",new Date ());
-        Book book2= new Book (21,"中的1国移动",new Date ());
+        Book book6 = new Book (611,"中国移动",new Date ());
+        Book book2= new Book (211,"中的1国移动",new Date ());
         bookService.save (book2);
         bookService.save (book6);
     }
@@ -87,7 +86,7 @@ public class ElasticSearchController {
     // TODO: 2018/12/15   jestClient不行？  ok
     @RequestMapping(value = "jest")
     public void jest() throws IOException {
-        Book book = new Book (100011,"灰太狼1",new Date ());
+        Book book = new Book (1000111,"灰太狼11",new Date ());
         Index index = new Index.Builder (book).index ("book8").type ("动画8").build ();
         jestClient.execute (index);
     }
