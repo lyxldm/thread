@@ -1,8 +1,6 @@
 package cn.ldm.thread.controller;
 
-import cn.ldm.thread.utills.DateUtills;
 import cn.ldm.thread.utills.DownLoadUtills;
-import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.net.URL;
@@ -26,7 +24,5 @@ public class DownLoadController {
         long ens = System.currentTimeMillis ();
         return String.valueOf (ens-start);
     }
-
-
 
 }
