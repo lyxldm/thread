@@ -26,7 +26,7 @@ public class UpLoadController {
     @RequestMapping("upload")
     public String upload() throws ExecutionException, InterruptedException {
         System.out.println (1 );
-
+        System.out.println (312312 );
         String path = "C:\\Users\\Administrator\\Desktop\\1.txt";
         Future<String> future = ThreadPoolUtills.getFixedThreadPool ().submit (new Callable<String> ( ) {
             @Override
