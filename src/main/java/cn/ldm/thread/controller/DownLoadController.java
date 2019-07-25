@@ -15,7 +15,7 @@ public class DownLoadController {
     public String downLoad() throws Exception {
         long start = System.currentTimeMillis ();
         try{
-            System.out.println (1 );
+            System.out.println (11);
             String filePath = "C:\\Users\\Administrator\\Desktop\\22111.exe";
             URL url = new URL ("http://39.106.211.119/group1/M00/00/03/rBGZfFwQvKqANPmkAjFzkAeDKn8284.exe");
             //URL url = new URL ("http://39.106.211.119/group1/M00/00/03/rBGZfFwQyDaAFjTYAAAAFPS5WL4556.txt");
