@@ -10,4 +10,5 @@ import org.springframework.data.elasticsearch.repository.ElasticsearchRepository
  * @create: 2018-12-15 17:19
  **/
 public interface BookService extends ElasticsearchRepository<Book,Integer> {
+
 }
