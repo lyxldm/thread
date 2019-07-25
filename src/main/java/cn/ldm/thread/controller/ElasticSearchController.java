@@ -36,6 +36,7 @@ public class ElasticSearchController {
 
     @RequestMapping(value = "elasticsearch")
     public void elasticsearch(){
+        System.out.println (55555 );
         Book book6 = new Book (611,"中国移动",new Date ());
         Book book2= new Book (211,"中的1国移动",new Date ());
         bookService.save (book2);

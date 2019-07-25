@@ -32,6 +32,7 @@ public class RabbitmqController
 
     @RequestMapping("delayQueue")
     public void rabbitmq(){
+        System.out.println (5555 );
         rabbitTemplate.convertAndSend ("delaychange", "delaykey","你好", messagePostProcessor);
         /*测试优先级*/
         /*rabbitTemplate.convertAndSend ("delaychange", "delaykey", "你好aa", new MessagePostProcessor ( ) {
